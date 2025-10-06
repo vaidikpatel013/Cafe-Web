@@ -1,0 +1,349 @@
+/* About Page Styles */
+.aboutPage {
+  background: linear-gradient(135deg, #f8f5f0 0%, #ffffff 100%);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, rgba(139, 69, 19, 0.9) 0%, rgba(160, 82, 45, 0.9) 100%),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="beans" patternUnits="userSpaceOnUse" width="50" height="50"><circle cx="25" cy="25" r="1" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23beans)"/></svg>');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 6rem 0;
+  position: relative;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Story Section */
+.story {
+  padding: 5rem 0;
+}
+
+.storyContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.storyText {
+  padding-right: 2rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: #8B4513;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.story .sectionTitle {
+  text-align: left;
+}
+
+.storyParagraph {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.storyImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagePlaceholder {
+  background: linear-gradient(135deg, #8B4513, #A0522D);
+  color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.imageIcon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.imagePlaceholder p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Values Section */
+.values {
+  padding: 5rem 0;
+  background: white;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.valueCard {
+  background: #f8f5f0;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.valueCard:hover {
+  border-color: #D2691E;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.valueIcon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.valueTitle {
+  font-size: 1.5rem;
+  color: #8B4513;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.valueDescription {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Team Section */
+.team {
+  padding: 5rem 0;
+  background: #f8f5f0;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.teamMember {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.teamMember:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.memberPhoto {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #8B4513, #A0522D);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
+}
+
+.photoIcon {
+  font-size: 3rem;
+  color: white;
+}
+
+.memberName {
+  font-size: 1.5rem;
+  color: #8B4513;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.memberRole {
+  color: #D2691E;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.memberBio {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Location Section */
+.location {
+  padding: 5rem 0;
+  background: white;
+}
+
+.locationContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.locationDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.detailItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.detailIcon {
+  font-size: 1.5rem;
+  margin-top: 0.2rem;
+}
+
+.detailItem h4 {
+  color: #8B4513;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.detailItem p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.locationMap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapPlaceholder {
+  background: linear-gradient(135deg, #8B4513, #A0522D);
+  color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mapPlaceholder:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.mapIcon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.mapPlaceholder p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.mapPlaceholder small {
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+  
+  .storyContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .storyText {
+    padding-right: 0;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .story .sectionTitle {
+    text-align: center;
+  }
+  
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .locationContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .imagePlaceholder,
+  .mapPlaceholder {
+    padding: 2rem;
+  }
+  
+  .imageIcon,
+  .mapIcon {
+    font-size: 3rem;
+  }
+}
